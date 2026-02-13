@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Daily Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <h1>Fresh Daily Menu</h1>
+    <p>Every day a new taste experience</p>
+    <button id="bookBtn" class="book-now">
+      <span>Book Now</span>
+    </button>
+  </header>
+
+  <section class="menu-section">
+    <h2>Today's Menu</h2>
+    <div id="menuList" class="menu-list"></div>
+  </section>
+
+  <!-- Booking modal -->
+  <section id="bookingModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Book a Table</h2>
+      <form id="bookingForm">
+        <input type="text" placeholder="Name" required />
+        <input type="number" placeholder="Guests" min="1" required />
+        <input type="datetime-local" required />
+        <button type="submit">Reserve</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
